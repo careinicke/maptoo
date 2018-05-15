@@ -1,0 +1,89 @@
+#us-map{
+  display: block;
+  position: absolute;
+  top: 10;
+  left: 20;
+  width: 90%;
+  height: 90%;
+  align-content: center;
+
+}
+
+path:hover, circle:hover {
+  stroke: #002868 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #002868 !important;
+  cursor: pointer;
+}
+#path67 {
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
+}
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/* Start your base/mobile styles here */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.item {
+    display: block;
+    width: 50%;
+    padding: 5px;
+    float: left;
+    min-height: 185px;
+    text-align: center;
+}
+
+.item.active {
+    display: block;
+    width:50%;
+    fill:orange;
+}
+
+.item.less{
+  display: block;
+    width:50%;
+    fill:#339933;
+
+}
+
+.item.more{
+    display: block;
+    width:50%;
+    fill:#0039e6;
+}
+
+.item.highlight {
+    display: block;
+    width:50%;
+    fill:#ff3300;
+}
+
